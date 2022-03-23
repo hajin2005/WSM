@@ -1,0 +1,13 @@
+/* 우선순위 : class < id <<<< !important */
+        body {
+            color: aquamarine;
+        }
+        #leader {   
+            color: cadetblue;
+        }
+        li {
+            color: blueviolet;
+        }
+        .korea {
+            color: cornflowerblue !important;
+        }
