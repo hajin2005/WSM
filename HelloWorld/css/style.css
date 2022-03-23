@@ -1,13 +1,34 @@
 /* 우선순위 : class < id <<<< !important */
-        body {
-            color: aquamarine;
-        }
-        #leader {   
-            color: cadetblue;
-        }
-        li {
-            color: blueviolet;
-        }
-        .korea {
-            color: cornflowerblue !important;
-        }
+body {
+    color: darkgreen;
+}
+#leader {   
+    color: cadetblue;
+}
+#bigbang {
+    color: gold;
+}
+.korea {
+    color: cornflowerblue !important;
+}
+
+h5 {
+    color: blue;
+}
+
+h1+h2 {
+    /* 마주하는 첫째 자매 */
+    background-color: cornsilk;
+}
+h2+h3{
+    /*마주하는 모든 자매*/
+    background-color: darksalmon;
+}
+
+li{
+    text-decoration: underline;
+}
+
+[type="password"]{
+    background-color: cornsilk;
+}
