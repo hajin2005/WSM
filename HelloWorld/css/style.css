@@ -25,7 +25,9 @@ h2+h3{
     background-color: darksalmon;
 }
 
-li{
+body>ul :nth-child(3) {
+    /*li nth-child(n) : li의 n번째 자식*/
+    /* first-child: 첫째  last-child: 막내 */
     text-decoration: underline;
 }
 
