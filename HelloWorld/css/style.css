@@ -1,13 +1,18 @@
 /* 우선순위 : class < id <<<< !important */
+
 body {
     color: darkgreen;
+    //background-color: dodgerblue;
 }
-#leader {   
+
+#leader {
     color: cadetblue;
 }
+
 #bigbang {
     color: gold;
 }
+
 .korea {
     color: cornflowerblue !important;
 }
@@ -20,17 +25,18 @@ h1+h2 {
     /* 마주하는 첫째 자매 */
     background-color: cornsilk;
 }
-h2+h3{
+
+h2+h3 {
     /*마주하는 모든 자매*/
-    background-color: darksalmon;
+    background-color: antiquewhite;
 }
 
-body>ul :nth-child(3) {
+body>ul:nth-child(4)>li:nth-child(3) {
     /*li nth-child(n) : li의 n번째 자식*/
     /* first-child: 첫째  last-child: 막내 */
     text-decoration: underline;
 }
 
-[type="password"]{
+[type="password"] {
     background-color: cornsilk;
 }
