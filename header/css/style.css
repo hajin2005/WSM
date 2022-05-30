@@ -27,8 +27,14 @@ header {
 
 .nav-list {
     border: var(--border-width solid var(--blue));
+    display: flex;
+    gap: 50px;
 }
 
 .nav-list li {
     border: var(--border-width)solid var(--green);
+}
+
+li {
+    background-color: blanchedalmond;
 }

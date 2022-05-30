@@ -1,0 +1,31 @@
+.nav-list {
+    justify-content: center;
+    flex-basis: 200px;
+}
+
+.nav-list li {
+    flex-basis: 200px;
+    /*기본 크기 설정*/
+    flex-shrink: 0;
+    /*줄이기 가능 1 기본값 :1*/
+    flex-grow: 1;
+    /*줄이기 가능: 1 기본값: 0*/
+    flex: 0 1 auto;
+    /*border: 픽셀 solid 색깔 */
+}
+
+.nav-list li:nth-child(1) {
+    flex-grow: 4;
+}
+
+.nav-list li:nth-child(2) {
+    flex-grow: 1;
+}
+
+.nav-list li:nth-child(3) {
+    flex-grow: 1;
+}
+
+.nav-list li:nth-child(4) {
+    flex-grow: 1;
+}
