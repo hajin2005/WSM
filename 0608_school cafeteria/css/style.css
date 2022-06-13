@@ -69,7 +69,7 @@ nav {
     height: 44px;
 }
 
-nav i {
+nav a {
     color: #fff;
 }
 
@@ -81,6 +81,11 @@ nav i {
 
 header {
     background-color: var(--first-color);
+}
+
+.nav-toggle {
+    /* visibility: hidden; 보이지는 않지만 공간차지 */
+    display: none;
 }
 
 
