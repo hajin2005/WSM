@@ -69,6 +69,10 @@ nav {
     height: 44px;
 }
 
+nav i {
+    font-size: 1.25rem;
+}
+
 nav a {
     color: #fff;
 }
@@ -86,6 +90,11 @@ header {
 .nav-toggle {
     /* visibility: hidden; 보이지는 않지만 공간차지 */
     display: none;
+    color: #fff;
+}
+
+.nav-link {
+    display: block;
 }
 
 
@@ -96,3 +105,38 @@ header {
 
 
 /* moblie */
+
+
+/*너비가 600px이하일 때*/
+
+@media screen and (max-width: 600px) {
+    header {
+        background-color: var(--first-color-bright);
+    }
+    .nav-toggle {
+        /* visibility: hidden; 보이지는 않지만 공간차지 */
+        display: block;
+        /*nav-logo 가운데 정렬을 위해*/
+        position: absolute;
+        /*마우스 포인터: 손*/
+        cursor: pointer;
+    }
+    .nav-logo {
+        margin: 0 auto;
+        /*밥아이콘 가운데 정렬*/
+    }
+    .nav-list {
+        flex-direction: column;
+        position: absolute;
+        /* align-items: center; */
+        left: 0;
+        top: 44px;
+        background-color: #b9b9b9;
+        right: 0;
+    }
+    .nav-item {
+        padding: 0.5rem 0;
+        border-bottom: 0.1px solid rgba(246, 243, 243, 0.555);
+        text-align: center;
+    }
+}
