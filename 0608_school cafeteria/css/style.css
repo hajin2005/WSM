@@ -62,13 +62,26 @@ a {
     text-decoration: none;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
 }
 
+nav i {
+    color: #fff;
+}
 
-/* nav */
+.nav-list {
+    display: flex;
+    color: aqua;
+    column-gap: 0.75rem;
+}
+
+header {
+    background-color: var(--first-color);
+}
 
 
 /* breakpoints */
