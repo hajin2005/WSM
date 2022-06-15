@@ -135,6 +135,7 @@ header {
         height: 0;
         /*overflow: hidden 메뉴 안 보이게 하는 법*/
         overflow: hidden;
+        transition: 0.3s;
     }
     .nav-item {
         padding: 0.5rem 0;
