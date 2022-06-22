@@ -90,13 +90,52 @@ header {
 .nav-toggle {
     /* visibility: hidden; 보이지는 않지만 공간차지 */
     color: #fff;
+    display: none;
 }
-
+.nav-logo {
+    margin-left: 10px;
+}
 .nav-link {
     display: block;
 }
-
-
+/*HOME*/
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;/*글자 내려쓰기*/
+    column-gap: 60px;
+    row-gap: 50px;
+    margin: 44px 2rem;
+}
+.card {
+    color: #5c5c5c;
+    background-color: rgb(244, 244, 244);
+    border-radius: 1rem;
+    /* flex-grow: 1;
+    flex-basis: 240px;
+    flex-shrink: 0; */
+    flex: 1 0 240px; /*기본 240px이고 커지면 확장하자*/
+    max-width: 300px; /*너무 넓지 않게 max 정하자*/
+}
+.card-image {
+    border-radius: 1rem 1rem 0 0;
+    height: 0;
+    padding-bottom: 66.6666666667%; /*그림 비율 유지하며 확대/축소 : 160:240*/
+    background: url('../img/plate_edit.png') center center;
+    background-size: cover; /*이미지 반복패턴 안하게함*/
+}
+.card-description {
+    margin: 1rem;
+}
+.card-title {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center; /*날짜 식 가운데 정렬*/
+}
+.card-menu {
+    margin-top: 1rem;
+    text-align: center;
+}
 /* breakpoints */
 
 
@@ -117,6 +156,7 @@ header {
         display: block;
         /*nav-logo 가운데 정렬을 위해*/
         position: absolute;
+        margin-left: 10px;
         /*마우스 포인터: 손*/
         cursor: pointer;
     }
